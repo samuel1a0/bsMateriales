@@ -1,7 +1,7 @@
 # Create your views here.
 from django.template import Context, loader, RequestContext
 from django.shortcuts import render_to_response
-from bsMaterialsApp.Producto import Producto
+from bsMaterialsApp.models import Producto, TipoProducto
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
@@ -39,6 +39,7 @@ def menuProd(request):
 
 def altaProd(request):
     producto = Producto()
+    tipoProductos = TipoProducto.objects.all()
     estado = ''
     if request.POST:
          producto.nombre= request.POST.get('nombre')
@@ -48,7 +49,7 @@ def altaProd(request):
          estado='ALTA PRODUCTO: '+producto.nombre+''
 
     #return login_required()
-    return render_to_response('altaProd.html',{'estado':estado}, RequestContext(request, {}))
+    return render_to_response('altaProd.html',{'estado':estado, 'tipoProductos': tipoProductos}, RequestContext(request, {}))
 
         
 

@@ -63,13 +63,21 @@
 				<tr>
 				    <td id="fuenteCeldaI">Tipo de Producto </td>
 
+
+				    {% for item in tipoProductos %}
+				      <p>{{item.nombre}}</p>
+				    {% endfor %}
+
+
+
+
 				    <td id="fuenteCeldaD"><select name="calificacion">
-   
-					  {% for item in tipoProductos %}
-						<option value="{{item.pk}}">{{item}}</option>
-					  <p>{{item.nombre}}</p>
-					  {% endfor %}
-					    </select>					</td>
+							<option value="1">pone</option>
+							<option value="2">aca</option>
+							<option value="3">tus</option>
+							<option value="4">Tipos</option>
+							<option value="5">Wampa</option>
+						</select>					</td>
 
 
 
