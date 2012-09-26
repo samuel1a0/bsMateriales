@@ -239,3 +239,13 @@ formatear el marco de lista
 	border-radius:83px;
 }
 
+
+#fuenteCeldaI{
+	padding-left:75px;
+	text-align:left;
+}
+
+
+#fuenteCeldaD{
+	text-align:left;
+}

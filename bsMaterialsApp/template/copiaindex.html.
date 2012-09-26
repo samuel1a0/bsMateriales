@@ -4,7 +4,7 @@
 
 
 <TITLE>BS Materiales</TITLE> 
-<link rel="StyleSheet" href="template/static/MenuesCompletos.css" type="text/css">
+<link rel="StyleSheet" href="static/MenuesCompletos.css" type="text/css">
 
 </HEAD> 
 <BODY id="body"> 
@@ -18,9 +18,9 @@
 
 
 
+<tr><td height="50">{{estado}}</td></tr>
 <tr>
 <td id="Formularios">
-		{{estado}}<br>
 	<form action="/login/" method="post">{% csrf_token %}
 		{% if next %}
 		<input type="hidden" name="next" value="{{ next }}" />

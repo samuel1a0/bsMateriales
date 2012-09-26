@@ -18,9 +18,9 @@
 
 
 
-<tr>
+
+<tr>{{estado}}
 <td id="Formularios">
-		{{estado}}<br>
 	<form action="/login/" method="post">{% csrf_token %}
 		{% if next %}
 		<input type="hidden" name="next" value="{{ next }}" />

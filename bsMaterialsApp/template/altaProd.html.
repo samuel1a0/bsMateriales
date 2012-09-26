@@ -100,3 +100,38 @@
  
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<td id="Formularios">
+					<form method="POST" action="">
+					Nombre del Producto: <input type="text" name="nombre"><br>
+					Tipo de Producto:
+						<select name="calificacion">
+							<option value="1">pone</option>
+							<option value="2">aca</option>
+							<option value="3">tus</option>
+							<option value="4">Tipos</option>
+							<option value="5">Wampa</option>
+						</select>
+					<br>
+
+					Stock: <input type="text" name="stock"><br>
+					Descripcion: <br><textarea cols="30" rows"8" name="descripcion"></textarea><br>
+
+
+					<input type="submit" value="Dar de Alta">
+					</form>
+				</td>

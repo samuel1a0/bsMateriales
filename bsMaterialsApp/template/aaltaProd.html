@@ -52,40 +52,30 @@
 
 		<td id="aplicacion">
 
-			<table align="center" id="Formularios">
-				    <tr><td colspan="2" align="center">{{estado}}</td></tr>
-			<form method="POST" action="">
+			{{estado}}
+			<table align="center">
 				<tr>
-				    <td id="fuenteCeldaI">Nombre del Producto: </td>
-				    <td id="fuenteCeldaD"><input type="text" name="nombre"></td>
-				</tr>
-
-				<tr>
-				    <td id="fuenteCeldaI">Tipo de Producto </td>
-				    <td id="fuenteCeldaD"><select name="calificacion">
+				<td id="Formularios">
+					<form method="POST" action="">
+					Nombre del Producto: <input type="text" name="nombre"><br>
+					Tipo de Producto:
+						<select name="calificacion">
 							<option value="1">pone</option>
 							<option value="2">aca</option>
 							<option value="3">tus</option>
 							<option value="4">Tipos</option>
 							<option value="5">Wampa</option>
-						</select>					</td>
-				</tr>
+						</select>
+					<br>
 
-				<tr>
-				    <td id="fuenteCeldaI">Stock </td>
-				    <td id="fuenteCeldaD"><input type="text" name="stock">			</td>
-				</tr>
+					Stock: <input type="text" name="stock"><br>
+					Descripcion: <br><textarea cols="30" rows"8" name="descripcion"></textarea><br>
 
-				<tr>
-				    <td id="fuenteCeldaI">Descripcion </td>
-				    <td id="fuenteCeldaD"><br><textarea cols="30" rows"8" name="descripcion"></textarea></td>
-				</tr>
 
-				<tr>
-				    <td align="right"><input type="submit" value="Dar de Alta">			</td>
+					<input type="submit" value="Dar de Alta">
+					</form>
+				</td>
 				</tr>
-			</form>
-
 			</table>
 		</td>
 	</td>
