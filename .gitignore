@@ -4,3 +4,4 @@
 .pydevproject
 .project
 local_settings.py
+settings.py
