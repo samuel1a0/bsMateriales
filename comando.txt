@@ -1,0 +1,1000 @@
+  776  <ul>
+  777  <li>
+  778  <strong>Syntax</s
+  779  <li>
+  780  <strong>Com
+  781  <li>
+  782  <strong>
+  783  <li>
+  784  <str
+  785  </ul>
+  786  </blockquote>
+  787   
+  788  <h2>
+  789  <a name="r
+  790  <p>See INSTALL.rst 
+  791   
+  792   
+  793   </article></div
+  794      </div><div class="f
+  795          <div id="files" class="bubble">
+  796         
+  797              <div
+  798               
+  799              
+  800                  <spa
+  801     
+  802                </div>
+  803                <ul class="button-group actions">
+  804                    <li>
+  805     
+  806                    </li>
+  807                  <li>
+  808                  
+  809                
+  810            
+  811     
+  812                  </li>
+  813              </div>
+  814              
+  815    <div id="readme" class="blob 
+  816      <article class="markdown-body entry-conte
+  817   
+  818  <h1>
+  819  <h2>
+  820  <
+  821  yo
+  822  <p
+  823  <
+  824  placed at:
+  825  </pr
+  826  repo:</p>
+  827  <pre>http://svn.textmate.org/trun
+  828  </pre>
+  829  <p>
+  830  <blo
+  831  <ul>
+  832  <li>Python 2.7</l
+  833  <li>sip 4.12.4</li>
+  834  </ul>
+  835  </blockquote>
+  836  <p>Additi
+  837  <pre>pip install -r require
+  838  </pre>
+  839   
+  840  <h2>
+  841  <
+  842  <p>To 
+  843  <p
+  844  </pre>
+  845  <p>Fin
+  846  to your path
+  847  </pre>
+  848  <p>or <tt>.zshrc</tt>
+  849   
+  850   
+  851   </a
+  852    </div>
+  853            </div>
+  854          </div>
+  855        </div>
+  856    </div>
+  857    <br st
+  858  <br style="clear:both;">
+  859  <div class="frame frame
+  860  </div>
+  861   
+  862         
+  863        
+  864        <div id="f
+  865      
+  866        <!
+  867       <div 
+  868         <!--[i
+  869         <!--[
+  870        
+  871        
+  872           <li><a href="https://g
+  873           <li><a
+  874        
+  875           
+  876           <li>
+  877         
+  878         <ul class="footer_nav">
+  879     
+  880           <li><a href="http://windows.github.c
+  881           <li><a href="http:/
+  882           <li>
+  883       
+  884         <u
+  885    
+  886     
+  887           
+  888         </ul>
+  889   
+  890           <h4>Documentation<
+  891         </ul>
+  892       </div><!-- /.site -->
+  893    </div><!-- /.upper_footer -->
+  894  <div class="lower
+  895    <div
+  896        <ul>
+  897   
+  898            <li><
+  899        <p>© 2012 <span ti
+  900      </div><!-- /#leg
+  901    </div><!-- /.site -->
+  902  </div><!-- /.lower_footer -->
+  903        </div><!-- /#footer -->
+  904      
+  905  <div id="keyboard_shortcuts_pane" class="instapaper_ignore readabil
+  906    <h2>Keyboard 
+  907    <div class=
+  908        <h3>Site wide sho
+  909        <dl class="keyboard-mappings">
+  910          <dt>s</dt>
+  911          <dd>Focus site search</
+  912        </dl>
+  913        <dl class="keyboard-mappings">
+  914          <dt>?
+  915          <dd>Brin
+  916      </div><!-- 
+  917      <div class="column mi
+  918        <h3>Commit list</h3>
+  919        <dl 
+  920          <dt
+  921          <dd>Mov
+  922        
+  923   
+  924        </dl>
+  925        <dl class="keyboard-mappings">
+  926          <dt>c <em>or</em> o <em>or</em> enter</dt>
+  927     
+  928        </dl>
+  929          <dd>Exp
+  930        </d
+  931      </div><!-- /.column
+  932      <div class="column last js-hidden-pane" style="display:none"
+  933        <
+  934        <dl class
+  935          <dt>j</
+  936          <dd>Move selection down</dd>
+  937        </dl>
+  938        <dl class="keyboard-mappings">
+  939   
+  940          <dd>Move se
+  941        </dl>
+  942        <dl class
+  943        
+  944        </dl
+  945          <dt><span class="platform-mac">⌘</span><span class="platform-other
+  946        </dl>
+  947    
+  948          <dt><s
+  949        </
+  950    <div class="
+  951      <div class="rule
+  952      <h3>Issues</h3>
+  953      <div class="columns threecols">
+  954        <div class="column f
+  955          <dl class="keyboard-mappings">
+  956            <
+  957            <dd>Move selection down</dd>
+  958          </dl>
+  959          <d
+  960            <dt
+  961            <dd>M
+  962          </dl>
+  963          <
+  964            <dt
+  965            
+  966          </
+  967            <dt>o
+  968            <dd>Open issue</
+  969            <dt><span class="platform-mac">⌘</span><span class=
+  970            <dd>Submit comment</dd>
+  971          </
+  972      
+  973            <d
+  974          </
+  975        
+  976          <dl cla
+  977            <dt>c</dt>
+  978       
+  979            <dt>l</dt>
+  980            
+  981          </dl>
+  982          <dl class="keyboard
+  983            <dt>i
+  984        
+  985         
+  986            
+  987          <
+  988        
+  989          </dl>
+  990        
+  991    <div class="js-hidde
+  992      
+  993      <h3>Issues D
+  994      <div class="columns threecols">
+  995        <div class="column first">
+  996          <dl class="keyboard-mappin
+  997      
+  998          <
+  999            <d
+ 1000           
+ 1001      
+ 1002    
+ 1003   
+ 1004      
+ 1005        </div><!-- /.column.first 
+ 1006      </div>
+ 1007    </div>
+ 1008    <div class="js-hidde
+ 1009     
+ 1010   
+ 1011      
+ 1012        <div class="column first">
+ 1013          <dl class="keyboar
+ 1014            <dt><span class="badmono">←</span> <em>or</em> h</dt>
+ 1015         
+ 1016          </dl>
+ 1017          <dl class="keyboard-m
+ 1018            <dt><sp
+ 1019            <dd>Scroll right</dd>
+ 1020          </d
+ 1021          <dl class="keyboard-mappings">
+ 1022            <dt><span class="badmon
+ 1023            <d
+ 1024          <
+ 1025      
+ 1026      
+ 1027          <dl clas
+ 1028      
+ 1029      
+ 1030        </div><!-- 
+ 1031      
+ 1032          <dl
+ 1033      
+ 1034          
+ 1035      
+ 1036      
+ 1037       
+ 1038            <dd
+ 1039   
+ 1040      
+ 1041            
+ 1042          </dl>
+ 1043       
+ 1044   
+ 1045   
+ 1046          </dl>
+ 1047    
+ 1048      </div>
+ 1049    </div>
+ 1050    
+ 1051      <div class="columns threecols">
+ 1052     
+ 1053         
+ 1054          <dl clas
+ 1055            <dt
+ 1056            <d
+ 1057          </dl>
+ 1058        
+ 1059     
+ 1060          </dl>
+ 1061        
+ 1062            <dt>w</dt>
+ 1063            <dd>Switch branc
+ 1064          </dl>
+ 1065          
+ 1066     
+ 1067            <dd>Expand UR
+ 1068          </dl>
+ 1069        
+ 1070      </div>
+ 1071    </d
+ 1072    <div class=
+ 1073      <div c
+ 1074     
+ 1075            <dt><span c
+ 1076          </dl>
+ 1077      
+ 1078            <d
+ 1079            <dd>Close form</dd>
+ 1080   
+ 1081          <dl class="keyboard-mappings">
+ 1082        
+ 1083   
+ 1084      
+ 1085      
+ 1086   
+ 1087    
+ 1088    
+ 1089      <div 
+ 1090      
+ 1091           
+ 1092          </dl>
+ 1093          <dl class="
+ 1094        
+ 1095     
+ 1096      
+ 1097      
+ 1098            <dt>e <
+ 1099          </dl>
+ 1100       
+ 1101       
+ 1102            <dd
+ 1103          <
+ 1104        </div><!-- /.column.f
+ 1105      </
+ 1106   
+ 1107  </di
+ 1108    <h2>
+ 1109   
+ 1110    <di
+ 1111      <d
+ 1112        <h3>Fo
+ 1113        
+ 1114  ## This is an &lt;h2&
+ 1115  #
+ 1116   
+ 1117      
+ 1118  _This wi
+ 1119  __This will also
+ 1120  *You **can** 
+ 1121  </pre>
+ 1122      <
+ 1123      <div
+ 1124        <h
+ 1125  * Item 2
+ 1126    * Item 2a
+ 1127    *
+ 1128       <pre>1. Item 1
+ 1129  2. 
+ 1130     * I
+ 1131   
+ 1132        <
+ 1133        
+ 1134       <pre>http:/
+ 1135  [Git
+ 1136       <pr
+ 1137  </pre>
+ 1138     
+ 1139    <div class=
+ 1140    <h3>Code 
+ 1141        
+ 1142  functi
+ 1143      $.facebox({div:'#foo'})
+ 1144    }
+ 1145  }
+ 1146  ```</pre>
+ 1147     
+ 1148      <d
+ 1149        <p>
+ 1150        <pre>He
+ 1151  without
+ 1152      def foo:
+ 1153        if not bar:
+ 1154     
+ 1155      <div class="col">
+ 1156        <p>Inline code fo
+ 1157        <pre>I think you shoul
+ 1158  `&lt;addr&gt;
+ 1159      <
+ 1160    </div>
+ 1161     
+ 1162      </div
+ 1163        <ul>
+ 1164   
+ 1165   
+ 1166            <a href="http://g
+ 1167            <a
+ 1168        </ul>
+ 1169      </div>
+ 1170    
+ 1171      
+ 1172      <span id="server_respo
+ 1173  <div id="global
+ 1174    <par
+ 1175    <param n
+ 1176  cd Prymantex/prymatex/
+ 1177  dir
+ 1178  echo "export PATH=$PATH:/path/to/prymatex/bin" >> ~/.bashrc
+ 1179  dir
+ 1180  pmx.py
+ 1181  make
+ 1182  make setup.py
+ 1183  make
+ 1184  dir
+ 1185  pmx.py
+ 1186  dir
+ 1187  rm Prymantex/
+ 1188  rm -r Prymantex
+ 1189  s
+ 1190  git clone https://github.com/diegomvh/prymatex
+ 1191  cd prymatex/
+ 1192  dir
+ 1193  pmx.py
+ 1194  cat requirements.txt 
+ 1195  pip install -r requirements.txt
+ 1196  sudo pip install -r requirements.txt
+ 1197  dir
+ 1198  ./prymatex/
+ 1199  ./prymatex
+ 1200  cd prymatex/
+ 1201  dir
+ 1202  cd ..
+ 1203  pmx.py
+ 1204  cd prymatex/
+ 1205  pmx.py
+ 1206  dir
+ 1207  cd ..
+ 1208  python pmx.py
+ 1209  sudo apt-get upgrade 
+ 1210  sudo aptitude
+ 1211  sudo apt-get upgrade 
+ 1212  sudo apt-get upgrade sudo apt-get install -f
+ 1213  sudo apt-get install -f
+ 1214  sudo apt-get autoremove 
+ 1215  sudo apt-get upgrade 
+ 1216  sudo apt-get install -f
+ 1217  sudo apt-get upgrade 
+ 1218  sudo apt-get install -f
+ 1219  sudo apt-get install python 2.7
+ 1220  sudo apt-get install pyQt4
+ 1221  nmap -sT -O localhost
+ 1222  sudo apt-get install nmap
+ 1223  nmap -sT -O localhost
+ 1224  sudo nmap -sT -O localhost
+ 1225  man nc
+ 1226  nc -1 12345
+ 1227  sudo nc -1 12345
+ 1228  man nc
+ 1229  nc -l 12345
+ 1230  sudo nmap -sT -O localhost
+ 1231  ps
+ 1232  ps a
+ 1233  sudo kill -9 1210
+ 1234  sudo nmap -sT -O localhost
+ 1235  nc -l 12345
+ 1236  man nc
+ 1237  nc -c "hola"
+ 1238  ps a
+ 1239  sudo kill -9 3390
+ 1240  ps a
+ 1241  sudo nmap -sT -O localhost
+ 1242  nc -l 12345
+ 1243  sudo nc -l 12345
+ 1244  ps a
+ 1245  kill -l 6415
+ 1246  kill -9 6415
+ 1247  sudo kill -9 6415
+ 1248  ps a
+ 1249  sudo kill -9 1190
+ 1250  nc -l 12345
+ 1251  clear
+ 1252  nc -l 12345
+ 1253  clear
+ 1254  nc -l 12345
+ 1255  ps
+ 1256  ps a
+ 1257  kill -9 1168
+ 1258  sudo kill -9 1168
+ 1259  nc -l 12345
+ 1260  sudo apt-get install x11-xserver-utils
+ 1261  sudo yaourt -S xmodmap
+ 1262  sudo apt-get install ipython
+ 1263  sudo yaourt -S ipython
+ 1264  sudo apt-get install libzmq-dev python-zmq
+ 1265  sudo yaourt -S community/python2-pyzmq
+ 1266  sudo apt-get install ipython
+ 1267  sudo apt-get install libzmq-dev python-zmq
+ 1268  sudo apt-get install libonig-dev
+ 1269  git clone https://github.com/prymatex/ponyguruma.git
+ 1270  cd ponyguruma
+ 1271  python setup.py build
+ 1272  sudo python setup.py install
+ 1273  python -c "import ponyguruma; print ponyguruma.VERSION"
+ 1274  git clone https://github.com/prymatex/qtermwidget.git
+ 1275  cd ..
+ 1276  git clone https://github.com/prymatex/qtermwidget.git
+ 1277  cd qtermwidget/
+ 1278  cmake .
+ 1279  make
+ 1280  sudo make install
+ 1281  cd pyqt4
+ 1282  python config.py
+ 1283  make
+ 1284  python config.py
+ 1285  cd ..
+ 1286  git clone https://github.com/prymatex/prymatex.git
+ 1287  cd prymatex/
+ 1288  git checkout develop
+ 1289  git pull origin develop
+ 1290  cd prymatex/
+ 1291  python ./pr<body class="logged_out  linux vis-public env-production ">
+ 1292  <a href="/prymatex" class="url fn" itemprop="url" rel="author">              <span itemprop="title">prymatex</span>
+ 1293  </div>
+ 1294  <div id="w
+ 1295    <h
+ 1296    <u
+ 1297         Page History
+ 1298       </a></li>
+ 1299    </ul>
+ 1300  </
+ 1301  <div id="wiki-content">
+ 1302    <div class="wr
+ 1303  <p>Prymatex utiliza esta librería de 
+ 1304  <p>Es muy
+ 1305  <pre><code>$ sudo apt-get install libonig-
+ 1306  </code></pre>
+ 1307  <h2>Continuamos sobre Git</h2>
+ 1308  <p>Para la siguiente parte es necesario tener Git instalado y buscar una ruta en nuestro file system para trabajar, quizá algo dentro de "workspace" o "projects" si su intención es colaborar con el código ;).</p>
+ 1309  <h2>Ponyguruma:</h2>
+ 1310  <p>Este es el binding para python de oniguruma, el código original pertenece a <a href="http://san
+ 1311  <pre><code>$ g
+ 1312  </code></pre>
+ 1313  <p>luego de clonado podemos instalar el binding</p>
+ 1314  <pre><code>$ cd ponyguruma
+ 1315  $ python setup.py build
+ 1316  $ sudo python setup.py install
+ 1317  </code></pre>
+ 1318  <p>para verificar que ponyguruma esta correctamente instalada</p>
+ 1319  <pre><code>$ python -c "import ponyguruma; print ponyguruma.VERSION"
+ 1320  </code></pre>
+ 1321  <h2>QTermWidget:</h2>
+ 1322  <p>Una 
+ 1323  <pre><code>$ g
+ 1324  </code></
+ 1325  <p>para instalarla primero el widget en qt</p>
+ 1326  <pre><code>$ cd qtermwidget
+ 1327  $ cmake .
+ 1328  $ make
+ 1329  $ sudo mak
+ 1330  </code></pre>
+ 1331  <p>y el binding para PyQt</p>
+ 1332  <pre><code>$ cd p
+ 1333  $ python config.py
+ 1334  $ make 
+ 1335  $ sudo make install
+ 1336  </code></pre>
+ 1337  <p>
+ 1338  <h2>Prymatex:</h2>
+ 1339  <p>Por fin llegamo
+ 1340  <pre><code>$ git clone https://github.com/prymatex/prymatex.git
+ 1341  </code></pre>
+ 1342  <p>con los fuentes ya clonados tene
+ 1343  <ul>
+ 1344  <li>Master es la rama
+ 1345  <li>Develop es la rama de desarrollo, esta es la rama inestable que sufre cambios diariamente, si bi
+ 1346  </ul><p>Mi reco
+ 1347  que puedan ayu
+ 1348  <pre><code
+ 1349  $ git pull origin d
+ 1350  </code></pre>
+ 1351  <p>Finalmente para correr Prymatex:</p>
+ 1352  <pre><code>$ cd prymatex
+ 1353  $ python ./prymatex/prymatex/bin/pmx.py
+ 1354  <
+ 1355  <h3>Que esta faltando:</h3>
+ 1356  <pre><code>Instalar plugins
+ 1357  Reporta errores
+ 1358  Participa...
+ 1359  </code></pre>
+ 1360  <p>Saludos cordiales del "Prymatex Team"</p>
+ 1361      </div>
+ 1362    </div>
+ 1363    </div>
+ 1364  </div>
+ 1365  <div id="gollum-footer
+ 1366  <div class="lower_footer">
+ 1367  </div>
+ 1368  ## This is an &lt;h2&gt; tag
+ 1369  ###### This is an &
+ 1370  **This tex
+ 1371  *Yo
+ 1372  * 
+ 1373  2. Item 2
+ 1374  3. Ite
+ 1375  </pre>
+ 1376  [GitHub](http://github.com)</pre>
+ 1377  <p>Blockquotes</p>
+ 1378  &gt; We're living the
+ 1379  python ./prymatex/prymatex/bin/pmx.py
+ 1380  clear
+ 1381  cd 
+ 1382  tar xzvf Django-1.4.1.tar.gz
+ 1383  cd Django-1.4.1
+ 1384  sudo python setup.py install
+ 1385  sudo apt-get install git-core 
+ 1386  cd
+ 1387  sudo apt-get install apache2
+ 1388  sudo apt-get install python python-dev python-qt4 cmake git
+ 1389  dir
+ 1390  cd Django-1.4.1/
+ 1391  dir
+ 1392  AUTHORS
+ 1393  cd 
+ 1394  cd Proyectos/
+ 1395  django-admin.py startproject bsMaterials
+ 1396  mkdir apache
+ 1397  dir
+ 1398  cd bsMaterials/
+ 1399  mkdir apache
+ 1400  mkdir logs
+ 1401  mkdir media
+ 1402  cd apache/
+ 1403  cd /etc/apache2/
+ 1404  ports.conf
+ 1405  vim ports.conf 
+ 1406  sudo /etc/init.d/apache2 restart
+ 1407  sudo apt-get install libapache2-mod-wsgi
+ 1408  cd sites-
+ 1409  cd sites-available/
+ 1410  dir
+ 1411  cd default
+ 1412  vim default
+ 1413  sudo vim default
+ 1414  sudo apt-get install ruby
+ 1415  dir
+ 1416  sudo apt-get install python-qt4
+ 1417  ipython
+ 1418  ls
+ 1419  cd prymatex/
+ 1420  s
+ 1421  ls
+ 1422  cd prymatex/
+ 1423  ls
+ 1424  cd ..
+ 1425  ls
+ 1426  cd prymatex/bin/
+ 1427  ls
+ 1428  ./pmx.py 
+ 1429  vim settings.py
+ 1430  vim settings.py 
+ 1431  python manage.py syncdb
+ 1432  dir
+ 1433  cd bsMaterials/
+ 1434  dir
+ 1435  vim settings.py
+ 1436  mkdir pruebas
+ 1437  cd ..
+ 1438  mkdir pruebas
+ 1439  dir
+ 1440  rm pruebas/
+ 1441  cd bsMaterials
+ 1442  rm -r pruebas/
+ 1443  cd ..
+ 1444  rm -r pruebas/
+ 1445  cd bsMaterials/
+ 1446  dir
+ 1447  python manage.py startapp prueba
+ 1448  cd ..
+ 1449  python manage.py startapp prueba
+ 1450  cd prueba/
+ 1451  dir
+ 1452  vim models.py
+ 1453  cd ..
+ 1454  cd bsMaterials/
+ 1455  dir
+ 1456  vim setting.pyc
+ 1457  vim setting.py
+ 1458  cd ..
+ 1459  dir
+ 1460  cd bsMaterials/
+ 1461  vim settings.py
+ 1462  python manage.py sql prueba
+ 1463  cd ..
+ 1464  python manage.py sql
+ 1465  python manage.py sql prueba
+ 1466  cd bsMaterials/
+ 1467  vim settings.py
+ 1468  cd bsMaterials/
+ 1469  python manage.py sql prueba
+ 1470  cd ..
+ 1471  python manage.py sql prueba
+ 1472  cd bsMaterials/
+ 1473  dir
+ 1474  vim settings.py
+ 1475  cd ..
+ 1476  python manage.py sql prueba
+ 1477  cd bsMaterials/
+ 1478  dir
+ 1479  vim settings.py
+ 1480  cd bsMaterials/
+ 1481  python manage.py sql prueba
+ 1482  cd ..
+ 1483  python manage.py sql prueba
+ 1484  python manage.py syncdb
+ 1485  dir
+ 1486  cd Proyectos/
+ 1487  dir
+ 1488  cd bsMaterials/
+ 1489  manager.py
+ 1490  manager.py runtimerserver 
+ 1491  manager.py runtimer server 
+ 1492  manager.py runtimer
+ 1493  manager.py run 
+ 1494  python manage.py runserver 8080
+ 1495  cd Proyectos/
+ 1496  cd bsMaterials/
+ 1497  manager.py runtimer
+ 1498  python manage.py runserver 8080
+ 1499  cd bsMaterials/
+ 1500  vim urls.py
+ 1501  vim settings.py
+ 1502  dir
+ 1503  cd ..
+ 1504  dir
+ 1505  cd bsMaterials/
+ 1506  mkdir admin.py
+ 1507  vim admin.py/
+ 1508  rm r admin.py/
+ 1509  dir
+ 1510  cd ..
+ 1511  cd bsMaterials/
+ 1512  cat admin.py/
+ 1513  cd admin.py/
+ 1514  dir
+ 1515  cd ..
+ 1516  rm -r admin.py/
+ 1517  vim admin.py
+ 1518  dir
+ 1519  vim admin.py 
+ 1520  cd Proyectos/bsMaterials/
+ 1521  dir
+ 1522  cd bsMaterials/
+ 1523  dir
+ 1524  vim urls.py
+ 1525  cd ..
+ 1526  python manage.py runserver 8080
+ 1527  ps
+ 1528  ps -a
+ 1529  ps
+ 1530  ps -a
+ 1531  exi
+ 1532  exit
+ 1533  python manage.py runserver 8080
+ 1534  cd Proyectos/bsMaterials/bsMaterials/
+ 1535  dir
+ 1536  cd ..
+ 1537  python manage.py runserver 8080
+ 1538  exit
+ 1539  python manage.py runserver 8080
+ 1540  python manage.py syncdb
+ 1541  dir
+ 1542  cd bsMaterials/
+ 1543  dir
+ 1544  vim settings.py
+ 1545  python manage.py syncdb
+ 1546  cd ..
+ 1547  python manage.py syncdb
+ 1548  vim urls.py
+ 1549  cd bsMaterials/
+ 1550  vim urls.py
+ 1551  python manage.py syncdb
+ 1552  vim urls.py
+ 1553  python manage.py syncdb
+ 1554  cd Proyectos/
+ 1555  cd bsMaterials/
+ 1556  vim urls.py
+ 1557  python manage.py syncdb
+ 1558  cd ..
+ 1559  python manage.py syncdb
+ 1560  dir
+ 1561  cd bsMaterials/
+ 1562  dir
+ 1563  cd ..
+ 1564  dir
+ 1565  cat manage.py 
+ 1566  cd bsMaterials/
+ 1567  dir
+ 1568  cd ..
+ 1569  dir
+ 1570  cd bsMaterials/
+ 1571  dir
+ 1572  cd bsMaterials/
+ 1573  dir
+ 1574  vim urls.py
+ 1575  vim admin.py 
+ 1576  cd ..
+ 1577  python manage.py runserver 8080
+ 1578  exit
+ 1579  cd Proyectos/bsMaterials/
+ 1580  dir
+ 1581  python manage.py runserver 8080
+ 1582  cd Proyectos/bsMaterials/bsMaterials/
+ 1583  dir
+ 1584  clear
+ 1585  dir
+ 1586  cd ..
+ 1587  dir
+ 1588  python manage.py runserver 8080
+ 1589  cd ..
+ 1590  exit
+ 1591  dir
+ 1592  vim vPrueba/
+ 1593  dir
+ 1594  cd vPrueba/
+ 1595  dir
+ 1596  vim admin.py
+ 1597  python manage.py prueba
+ 1598  python manage.py startapp prueba
+ 1599  python manage.py startapp vPrueba
+ 1600  cd vPrueba/
+ 1601  dir
+ 1602  vim models.py 
+ 1603  dir
+ 1604  cd ..
+ 1605  dir
+ 1606  rm prueba/
+ 1607  cd vPrueba/
+ 1608  dir
+ 1609  cd ..
+ 1610  vim manage.py 
+ 1611  cd prueba/
+ 1612  dir
+ 1613  cd ..
+ 1614  bsMaterials/
+ 1615  dir
+ 1616  cd bsMaterials/
+ 1617  dir
+ 1618  vim settings.py
+ 1619  cd ..
+ 1620  dir
+ 1621  cd bsMaterials/
+ 1622  vim settings.py
+ 1623  cd ..
+ 1624  dir
+ 1625  python manage.py sql vPrueba
+ 1626  python manage.py syncdb
+ 1627  dir
+ 1628  vim
+ 1629  cd bsMaterials/
+ 1630  dir
+ 1631  cd ..
+ 1632  cd vPrueba/
+ 1633  dir
+ 1634  cd ..
+ 1635  dir
+ 1636  cd bsMaterials/
+ 1637  dir
+ 1638  vim urls.py
+ 1639  dir
+ 1640  vim urls.py
+ 1641  cd ..
+ 1642  cd bsMaterials/
+ 1643  cd prueba/
+ 1644  cd ..
+ 1645  cd vPrueba/
+ 1646  dir
+ 1647  vim admin.py
+ 1648  cd ..
+ 1649  python manage.py runserver 8080
+ 1650  dir
+ 1651  cd bsMaterials/
+ 1652  sir
+ 1653  dir
+ 1654  vim settings.py
+ 1655  cd vPrueba/
+ 1656  vim admin.py
+ 1657  ls
+ 1658  cd .
+ 1659  cd ..
+ 1660  ls
+ 1661  cd bsMaterials/
+ 1662  ls 
+ 1663  ls vPrueba/
+ 1664  cat vPrueba/admin.py
+ 1665  cat vPrueba/models.py
+ 1666  ls
+ 1667  cd vPrueba/
+ 1668  ls
+ 1669  vim admin.py
+ 1670  rm .admin.py.swp 
+ 1671  ls
+ 1672  vim admin.py
+ 1673  cd ..
+ 1674  dir
+ 1675  cd vPrueba/
+ 1676  dir
+ 1677  vim models.py
+ 1678  exit
+ 1679  cd Proyectos/
+ 1680  cd bsMaterials/
+ 1681  python manage.py runserver 8080
+ 1682  python manage.py validate
+ 1683  python manage.py runserver 8080
+ 1684  exit
+ 1685  sudo apt-get install umbrello
+ 1686  sudo apt-get install eclipse
+ 1687  exit
+ 1688  sudo apt-get remove eclipse
+ 1689  sudo add-apt-repository "deb http://archive.canonical.com/ maverick partner"
+ 1690  sudo apt-get install sun-java6-jre sun-java6-plugin sun-java6-fonts
+ 1691  sudo apt-get install eclipse
+ 1692  python manage.py sql bsMaterialsApp
+ 1693  python
+ 1694  apt-get install python-mysqldb
+ 1695  sudo apt-get install python-mysqldb
+ 1696  sudo apt-get install mysql-server
+ 1697  dir
+ 1698  cd workspace/
+ 1699  dir
+ 1700  cd bsMaterials/
+ 1701  dir
+ 1702  python manage.py sql polls
+ 1703  python manage.py sql bsMaterialsApp/
+ 1704  sh setuptools-0.6c9-py2.4.egg --prefix=~
+ 1705  sh setuptools-0.6c11-py2.7.egg 
+ 1706  sudo sh setuptools-0.6c11-py2.7.egg 
+ 1707  cd /usr/bin/
+ 1708  dit
+ 1709  ls
+ 1710  python2.7
+ 1711  cd python2.7
+ 1712  dir
+ 1713  easy_install
+ 1714  sudo easy_install
+ 1715  cd python2.7
+ 1716  cd python27
+ 1717  cd /python27
+ 1718  cd ..
+ 1719  cd usr/
+ 1720  dir
+ 1721  cd lib
+ 1722  dir
+ 1723  cd python2.7/
+ 1724  dir
+ 1725  cd..
+ 1726  cd ..
+ 1727  dir 
+ 1728  dir p
+ 1729  ls 
+ 1730  cd pymodules/
+ 1731  dir
+ 1732  cd python2.7/
+ 1733  dir
+ 1734  cd..
+ 1735  cd ..
+ 1736  cd
+ 1737  mysqladmin
+ 1738  sudo apt-get install mysql-admin
+ 1739  sudo apt-get install mysql-mmm-tools 
+ 1740  sudo apt-get install python-psycopg2
+ 1741  cd workspace/bsMaterials/
+ 1742  dir
+ 1743  python manage.py runserver
+ 1744  python manage.py syncdb
+ 1745  sudo aptitude search mysql-admin
+ 1746  sudo apt-get install mysql-admin
+ 1747  sudo aptitude install mysql-admin
+ 1748  mysqladmin 
+ 1749  cd workspace/bsMaterials/
+ 1750  dir
+ 1751  mysqladmin create dbMateriasl
+ 1752  sudo mysqladmin create dbMateriasl
+ 1753  sudo mysqladmin
+ 1754  sudo mysqladmin create bdMaterials
+ 1755  mysqladmin create bdMaterials
+ 1756  mysql
+ 1757  dir
+ 1758  mysql
+ 1759  cd workspace/bsMaterials/
+ 1760  mysql -u root -p
+ 1761  dir
+ 1762  python manage.py syncdb
+ 1763  python manage.py runserver 8080
+ 1764  python manage.py syncdb
+ 1765  python manage.py runserver 8080
+ 1766  dir
+ 1767  cd workspace/bsMaterials/
+ 1768  dir
+ 1769  python manage.py runserver 8080
+ 1770  python manage.py syncdb
+ 1771  python manage.py runserver 8080
+ 1772  python manage.py syncdb
+ 1773  python manage.py runserver 8080
+ 1774  history
+ 1775  history >> comando.txt

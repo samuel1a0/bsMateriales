@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Columnas Multiples con CSS3</title>
+	<link rel="StyleSheet" href="template/static/MenuesCompletos.css" type="text/css">
+</head>
+<body> 
+
+
+		
+<table id="tablaGral" height=750 width=100% ALIGN=center>
+
+
+	<tr>
+		<td colspan="2" id="celdaBienvenida">
+			
+			<div align="center"> Ud esta logeado como: {{LOGEADO}}</div>
+		</td>
+
+	</tr>
+
+	<tr>
+	<td id="celdaBienvenida">
+		 <div id="menu">
+			<ul>
+			<li><a id="efectoBoton">Alta de Productos</a>
+			</li>
+			<li><a id="efectoBoton">Baja de Productos</a>
+			</li>
+			<li><a id="efectoBoton">Modificacion de Productos</a>
+			</li>
+			<li><a id="efectoBoton">Alta de Deposito</a>
+			</li>
+			<li><a id="efectoBoton">Baja de Deposito</a>
+			</li>
+			<li><a id="efectoBoton">Modificacion de Deposito</a>
+			</li>
+			<li><a id="efectoBoton">Venta de Materiales</a>
+			</li>
+			<li><a id="efectoBoton">Entrega de Materiales</a>
+			</li>
+			</ul>
+		</div>
+
+		<td id="aplicacion">
+		<table  align="center">
+		  <tr>
+		    <form action="" method="POST">
+		      {{estado}}
+		      <tr align="left"><td>	Nombre de Producto: <input type="text" name="nombre"></td></tr>
+		      <tr align="left"><td>	Stock: <input type="text" class="vIntegerField" name="stock"></td></tr>
+		      <tr align="left"><td>	Descripion:<input type="text" name="descripcion"></td></tr>
+		      <tr align="left"><td>	<input type="submit" value="Dar de Alta">
+		    </form>
+		  </tr>
+
+
+		</td>
+	</td>
+
+	</tr>
+
+
+
+</table>
+
+
+ 
+</body>
+</html>

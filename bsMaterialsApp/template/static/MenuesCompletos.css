@@ -1,0 +1,241 @@
+body{
+
+  background-image:url(fondo.png);
+  background-attachment:fixed;
+
+  }
+
+
+#contenedor {
+
+  background-image: linear-gradient(#000000, #CBA, transparent), radial-gradient(#FF0, #F00,transparent);
+
+  margin: auto;
+  padding: 10px;
+  font: 12px helvetica, arial, sans-serif;
+  }
+
+
+
+#contenedor p {
+
+  -webkit-column-gap: 10px;
+ 
+  -moz-column-count: 2;
+  -moz-column-gap: 10px;
+ 
+  column-count: 2;
+  column-gap: 10px;
+  }
+
+
+
+  h1{
+  color: #303030;
+  font-size: 48px;
+  text-shadow: 2px 2px 5px #505050;
+  }
+
+
+
+#celda1{
+
+	text-align:center;
+	align:center;
+	height:100px;
+
+  }
+
+
+#celdaBienvenida{
+
+	width=15%;
+	height:5px;
+	font-family: Comic Sans MS;
+	border-radius:50px;
+	box-shadow:0px 0px 10px 7px #000000;
+
+	background-color: rgba(200,255,255,0.5);;
+	background-position:center;
+	background-repeat:no-repeat;
+
+  }
+
+
+
+
+#tablaGral{
+	height:1000;
+	width:100%;
+	ALIGN:center;
+	border-collapse: separate;
+	border-spacing:  15px 15px;
+
+
+  }
+
+
+
+
+
+#aplicacion{
+
+	height:500;
+	width:85%;
+	margin:0 auto;
+	text-align:center;
+	text-color:#000000;
+
+	background-image: url(Logo.png);
+	background-position:center;
+
+	font: 15px Arial Black, arial, sans-serif;
+
+	border-radius:100px;
+
+	box-shadow:0px 0px 10px 7px #000000;
+
+	background-color:#FFFFFF;
+
+	background-color:rgba(200,255,255,0.5);
+
+
+
+
+  }
+
+
+
+
+
+
+#abajo{
+	height:220;
+	vertical-align:bottom;
+	align:center;
+
+  }
+
+#arriba{
+	height:220;
+	vertical-align:top;
+	align:center;
+
+  }
+
+
+#texto{
+	backgound-color:transparent;
+	text-color:#000000;
+
+  }
+
+
+
+
+#mi_menu{
+	font-family:Arial,sans-serif;
+	font-size:10px;
+	}
+
+
+#mi_menu li{
+	height:18px;
+	line-height:18px;
+	text-align:center;
+	background: #eee;
+	}
+
+/*
+los enlaces de la lista, en display:block para que ocupen todo el espacio y sea fácil clicarlos
+*/
+
+#mi_menu li a{
+	background: #eee;
+	color:#111;
+	border-right: 1px solid #ddd;
+	}
+
+/*
+un efecto de color a escoger, cuando el mouse sobrevuela cada elemento
+*/
+
+
+#menu li a:hover{
+	
+	background: #0000FF;
+	background: -moz-linear-gradient(top,  #666,  #000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+	-webkit-gradient(linear, left top, left bottom, form(#0666)to(#000))
+	color:#eee
+	border:2;
+}
+
+
+
+
+
+#menu ul li a{
+
+	color:#999;
+	padding: 9px 24px;
+	background-color: rgba(192,192,192,1);
+	display:block;
+
+  }
+
+
+/*
+formatear el marco de lista
+*/
+
+
+#menu ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	}
+
+
+#efectoBoton {
+	text-align:center;
+	height:40px;
+	background: -moz-linear-gradient(top,  #666,  #0000FF);
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#0000FF));
+	-webkit-gradient(linear, left top, left bottom, form(#0666)to(#0000FF))
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+
+
+#Titulos{
+	text-align:center;
+	font: 30px helvetica, arial, sans-serif;
+}
+
+
+#BotonSeleccionado {
+
+	background: -moz-linear-gradient(top,  #666,  #000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+	-webkit-gradient(linear, left top, left bottom, form(#0666)to(#000))
+	color:#eee
+	border:2;
+	text-align:center;
+	height:40px;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+
+
+#Formularios{
+	height:310px;
+	width:70%;
+	text-align:center;
+	font: bold italic 20px helvetica, arial, sans-serif;
+	background-color:rgba(200,255,255,0.7);
+	border-radius:83px;
+}
+
