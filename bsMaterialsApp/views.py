@@ -43,8 +43,9 @@ def altaProd(request):
     estado = ''
     if request.POST:
          producto.nombre= request.POST.get('nombre')
-         producto.stockT= request.POST.get('stock')
+         producto.stockTotal= request.POST.get('stock')
          producto.descripcion=request.POST.get('descripcion')
+         producto.tipoProducto=TipoProducto.objects.get(pk= request.POST.get('tipoProducto'))
          producto.save()
          estado='ALTA PRODUCTO: '+producto.nombre+''
 
