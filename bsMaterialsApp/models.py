@@ -53,6 +53,7 @@ class Detalle(models.Model):
 #----------------------------------------------------------------------------------------------------
 
 class DetalleNotaVenta(Detalle):
+    nota = models.ForeignKey('NotaVenta')
     pass
 #----------------------------------------------------------------------------------------------------
 
@@ -66,7 +67,6 @@ class NotaVenta(models.Model):
     nombre_cliente = models.CharField(max_length = 40)
     apellido_cliente = models.CharField(max_length = 20)
     fecha = models.datetime    
-    detalle = models.ForeignKey(DetalleNotaVenta)
 #----------------------------------------------------------------------------------------------------
 
 class Factura(models.Model):

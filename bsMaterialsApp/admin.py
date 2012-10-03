@@ -1,6 +1,14 @@
 from django.contrib import admin
-from bsMaterialsApp.models import Producto, TipoProducto, Rubro
+from bsMaterialsApp.models import NotaVenta, DetalleNotaVenta
 
-admin.site.register(Producto)
-admin.site.register(TipoProducto)
-admin.site.register(Rubro)
+#admin.site.register(Producto)
+#admin.site.register(TipoProducto)
+#admin.site.register(Rubro)
+
+class DetalleNotaVentaInline(admin.TabularInline):
+    model = DetalleNotaVenta
+     
+class VentaAdmin(admin.ModelAdmin):
+    inlines = [DetalleNotaVentaInline]
+
+admin.site.register(NotaVenta, VentaAdmin)
