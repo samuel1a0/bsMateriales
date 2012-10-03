@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Baja de Productos</title>
+	<link rel="StyleSheet" href="template/static/MenuesCompletos.css" type="text/css">
+</head>
+<body> 
+
+
+<div align="right"> Ud esta logeado como: {{usuario}} 
+
+
+<form action="index.php" method="post" name="login" id="login">	
+
+<input type="submit" name="Submit" class="button" value="Finalizar sesion" />	
+<input type="hidden" name="option" value="com_user" />
+<input type="hidden" name="task" value="logout" />
+<input type="hidden" name="return" value="<?php echo $this->return; ?>" />
+</form>	
+
+</div>
+		
+<table id="tablaGral" height=750 width=100% ALIGN=center>
+
+
+	<tr>
+		<td colspan="2" id="celdaBienvenida" height="100px">
+			
+			<div id="Titulos">Gestion de Productos</div>
+			
+		</td>
+
+	</tr>
+
+	<tr>
+	<td id="celdaBienvenida">
+		 <div id="menu">
+			<ul>
+			<li><a id="efectoBoton">Alta de Productos</a>
+			</li>
+			<li><a id="BotonSeleccionado">Baja de Productos</a>
+			</li>
+			<li><a id="efectoBoton">Modificacion de Productos</a>
+			</li>
+			<li><a id="efectoBoton">Volver a Gestion de Productos</a>
+			</li>
+			<li><a id="efectoBoton">Listar Productos</a>
+			</li>
+			</ul>
+		</div>
+
+		<td id="aplicacion">
+
+
+		<table align="center" id="Formularios">
+
+			<tr>
+
+			    <td rowspan="7">
+
+
+
+
+<table id="Grilla">
+
+
+
+<tr height="50">
+
+
+	<td>
+	  producto
+      </td>
+
+</tr>
+<tr>
+
+
+  <td bgcolor= "#C0C0C0">
+
+      instancias de productos disponibles
+		
+  </td>
+	
+</tr>
+	
+<tr>
+
+    <td>
+      instancias de productos disponibles
+
+    </td>
+
+</tr>
+
+<tr>
+		
+  <td bgcolor= "#C0C0C0">
+
+      instancias de productos disponibles
+
+  </td>
+
+</tr>
+	
+<tr>
+		
+    <td colspan="3">
+
+      instancias de productos disponibles
+
+    </td>
+
+</tr>
+
+<tr>
+
+    <td colspan="3">
+    </td>
+</tr>
+
+
+</table>
+
+
+
+
+
+
+			    </td>
+
+			</tr>
+
+			<tr>
+
+			    <td colspan="2" align="center">{{estado}}</td>
+
+			</tr>
+
+
+
+			<form method="POST" action="">
+				<tr>
+				    <td id="fuenteCeldaI">Nombre del Producto: </td>
+				    <td id="fuenteCeldaD"><input type="text" name="nombre" value="{{nombreProducto}}"></td>
+				</tr>
+
+
+				<tr>
+				    <td id="fuenteCeldaI" valign="top">Descripcion </td>
+				    <td id="fuenteCeldaD" colspan="2">
+					<textarea cols="30" rows="5" name="descripcion">
+
+						{{descripcionProducto}}
+	
+					</textarea></td>
+				</tr>
+
+				<tr>
+				    <td align="right"><input type="submit" value="Dar de Baja">			</td>
+				</tr>
+			</form>
+
+			</table>
+
+
+		</td>
+	</td>
+
+	</tr>
+
+
+
+</table>
+
+
+ 
+</body>
+</html>

@@ -257,3 +257,14 @@ formatear el marco de lista
 	background-color:rgba(200,255,255,0.7);
 	border-radius:83px;
 }
+
+
+
+#Grilla{
+	border:"6";
+	height:"200";
+	width:"100%";
+	font: bold italic 20px helvetica, arial, sans-serif;
+	vbackground-color:rgba(200,255,255,0.7);
+	border-radius:83px;
+}

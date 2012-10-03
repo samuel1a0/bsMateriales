@@ -19,22 +19,30 @@ def login_user(request):
             if user.is_active:
                 login(request, user)
                 state = "You're successfully logged in!"
-                return render_to_response('MenuGerente.html',{'usuario':username}, context_instance=RequestContext(request))
+                return render_to_response('menuGerente.html',{'usuario':username}, context_instance=RequestContext(request))
             else:
                 state = "Your account is not active, please contact the site admin."
         else:
             state = "Your username and/or password were incorrect."
             
-        return render_to_response('index.html',{'estado':state},context_instance=RequestContext(request))    
+        return render_to_response('login.html',{'estado':state},context_instance=RequestContext(request))    
 
 
 
 def index(request):
-    return render_to_response('index.html', RequestContext(request, {}))
+    return render_to_response('login.html', RequestContext(request, {}))
 
 def menuProd(request):
-    return render_to_response('GestionProductos.html', RequestContext(request, {}))
+    return render_to_response('gestionProd.html', RequestContext(request, {}))
 
+def ventProd(request):
+    return render_to_response('ventaProd.html', RequestContext(request, {}))
+
+def modificacionProd(request):
+    return render_to_response('modificacionProd.html', RequestContext(request, {}))
+
+def bajaProd(request):
+    return render_to_response('bajaProd.html', RequestContext(request, {}))
 
 
 def altaProd(request):
