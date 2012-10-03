@@ -249,3 +249,11 @@ formatear el marco de lista
 #fuenteCeldaD{
 	text-align:left;
 }
+
+
+#Venta{
+	width:100%;
+	font: bold italic 20px helvetica, arial, sans-serif;
+	background-color:rgba(200,255,255,0.7);
+	border-radius:83px;
+}
