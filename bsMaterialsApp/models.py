@@ -22,8 +22,8 @@ class TipoProducto(models.Model):
 class Producto(models.Model):
     nombre = models.CharField(max_length = 40)
     stockTotal = models.IntegerField()
-    tipoProducto = models.ForeignKey(TipoProducto)
     descripcion = models.CharField(max_length = 40, blank = True)
+    tipoProducto = models.ForeignKey(TipoProducto)
     
     def __unicode__(self):
         return "%s" % self.nombre
@@ -38,12 +38,22 @@ class NoFraccionable(Producto):
 #---------------------------------------------------------------------------------------------------
 
 class Deposito(models.Model):
-    rubro = models.ForeignKey(Rubro)
     direccion = models.CharField(max_length = 40)
     telefono = models.CharField(max_length = 15)
+    rubro = models.ForeignKey(Rubro)
     
     def __unicode__(self):
         return "%s" % self.rubro
+#---------------------------------------------------------------------------------------------------
+
+class Stock(models.Model):
+    reservadosConfirmados = models.IntegerField()
+    reservadosNoConfirmados = models.IntegerField()
+    deposito = models.ForeignKey(Deposito)
+    producto = models.ForeignKey(Producto)
+    
+    def __unicode__(self):
+        return "%s" % self.nombre
 #---------------------------------------------------------------------------------------------------
 
 class Detalle(models.Model):
@@ -58,6 +68,7 @@ class DetalleNotaVenta(Detalle):
 #----------------------------------------------------------------------------------------------------
 
 class DetalleFactura(Detalle):
+    factura = models.ForeignKey('Factura')
     venta = models.ForeignKey(DetalleNotaVenta)
     pass
 #----------------------------------------------------------------------------------------------------
@@ -75,27 +86,25 @@ class Factura(models.Model):
     formaDePago = models.CharField(max_length = 15)
     precioTotal = models.IntegerField()
     ventaNota = models.ForeignKey(NotaVenta)
-    detalle = models.ForeignKey(DetalleFactura)    
-#----------------------------------------------------------------------------------------------------
-
-class DetalleRemito(models.Model):
-    producto = models.ForeignKey(Producto)
-    cantidad = models.IntegerField()
-    detalleFactura = models.ForeignKey(DetalleFactura)
-    entregado = models.BooleanField()
+    factura = models.ForeignKey('Remito')    
 #----------------------------------------------------------------------------------------------------
 
 class Remito(models.Model):
     nroRemito = models.IntegerField()
-    factura = models.ForeignKey(Factura)
-    detalleRemito = models.ForeignKey(DetalleRemito)
+#----------------------------------------------------------------------------------------------------
+
+class DetalleRemito(models.Model):
+    cantidad = models.IntegerField()
+    entregado = models.BooleanField()
+    detalleFactura = models.ForeignKey(DetalleFactura)
+    remito = models.ForeignKey(Remito)
 #----------------------------------------------------------------------------------------------------
 
 class Descuento(models.Model):
+    nroDescuento = models.IntegerField()
     fecha = models.datetime
     cantidad = models.IntegerField()
     producto = models.ForeignKey(Producto)
-    codigo = models.IntegerField()
 #----------------------------------------------------------------------------------------------------
 
 class Donacion(Descuento):
