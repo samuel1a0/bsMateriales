@@ -39,7 +39,7 @@
 			<ul>
 			<li><a id="BotonSeleccionado" href="">Alta de Productos</a>
 			</li>
-			<li><a id="efectoBoton" href="Baja Producto.html">Baja de Productos</a>
+			<li><a id="efectoBoton" href="/login/menuProd/bajaProd">Baja de Productos</a>
 			</li>
 			<li><a id="efectoBoton" href="ModProd.html">Modificacion de Productos</a>
 			</li>
@@ -63,10 +63,10 @@
 				<tr>
 				    <td id="fuenteCeldaI">Tipo de Producto </td>
 
-				    <td id="fuenteCeldaD"><select name="calificacion">
+				    <td id="fuenteCeldaD"><select name="tipoProducto">
    
 					  {% for item in tipoProductos %}
-						<option value="{{item.pk}}">{{item.nombre}}</option>
+						<option value="{{item.pk}}">{{item}}</option>
 					  <p>{{item.nombre}}</p>
 					  {% endfor %}
 					    </select>					</td>
@@ -77,7 +77,7 @@
 				</tr>
 
 				<tr>
-				    <td id="fuenteCeldaI">Stock </td>
+				    <td id="fuenteCeldaI">Stock Total </td>
 				    <td id="fuenteCeldaD"><input type="text" name="stock">			</td>
 				</tr>
 

@@ -19,7 +19,7 @@ def login_user(request):
             if user.is_active:
                 login(request, user)
                 state = "You're successfully logged in!"
-                return render_to_response('menuGerente.html',{'usuario':username}, context_instance=RequestContext(request))
+                return render_to_response('menuGerente.html',{'usuario':username,'contrasenia':password}, context_instance=RequestContext(request))
             else:
                 state = "Your account is not active, please contact the site admin."
         else:
