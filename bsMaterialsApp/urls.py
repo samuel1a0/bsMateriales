@@ -5,15 +5,15 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'bsMaterialsApp.views.index'),
+    url(r'^$', 'bsMaterialsApp.views.indexLogin'),
     url(r'^login/$', 'bsMaterialsApp.views.login_user'),
-    url(r'^login/menuProd/$', 'bsMaterialsApp.views.menuProd'),
-    url(r'^login/ventaProd$', 'bsMaterialsApp.views.ventProd'),
-    url(r'^login/menuProd/altaProd$', 'bsMaterialsApp.views.altaProd'),
-    url(r'^login/menuProd/modificacionProd$', 'bsMaterialsApp.views.modificacionProd'),
-    url(r'^login/menuProd/bajaProd$', 'bsMaterialsApp.views.bajaProd'),
+    url(r'^login/menuProd/$', 'bsMaterialsApp.views.menuProducto'),
+    url(r'^login/ventaProd$', 'bsMaterialsApp.views.ventaProducto'),
+    url(r'^login/menuProd/altaProd$', 'bsMaterialsApp.views.altaProducto'),
+    url(r'^login/menuProd/modificacionProd$', 'bsMaterialsApp.views.modificacionProducto'),
+    url(r'^login/menuProd/bajaProd$', 'bsMaterialsApp.views.bajaProducto'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^login/menuProducto/altaProd$', 'bsMaterialsApp.views.altaProd'),
+    url(r'^login/menuProducto/altaProd$', 'bsMaterialsApp.views.altaProducto'),
     
 )
 if settings.DEBUG and settings.STATIC_ROOT:

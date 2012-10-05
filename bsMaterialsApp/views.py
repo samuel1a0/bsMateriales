@@ -1,10 +1,12 @@
 # Create your views here.
+#*-*coding: utf-8 --*-*
 from django.template import Context, loader, RequestContext
 from django.shortcuts import render_to_response
 from bsMaterialsApp.models import Producto, TipoProducto
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
+from django.core.exceptions import ObjectDoesNotExist
 
 
 def login_user(request):
@@ -18,34 +20,30 @@ def login_user(request):
         if user is not None:
             if user.is_active:
                 login(request, user)
-                state = "You're successfully logged in!"
-                return render_to_response('menuGerente.html',{'usuario':username,'contrasenia':password}, context_instance=RequestContext(request))
+                state = "Exito!"
+                return render_to_response('menuGerente.html',{'usuario':username,'contraseña':password}, context_instance=RequestContext(request))
             else:
-                state = "Your account is not active, please contact the site admin."
+                state = "Cuenta Inactiva"
         else:
-            state = "Your username and/or password were incorrect."
+            state = " nombre de usuario o contraseña incorrecta."
             
         return render_to_response('login.html',{'estado':state},context_instance=RequestContext(request))    
 
 
 
-def index(request):
+def indexLogin(request):
     return render_to_response('login.html', RequestContext(request, {}))
 
-def menuProd(request):
+def menuProducto(request):
     return render_to_response('gestionProd.html', RequestContext(request, {}))
 
-def ventProd(request):
+def ventaProducto(request):
     return render_to_response('ventaProd.html', RequestContext(request, {}))
 
-def modificacionProd(request):
+def modificacionProducto(request):
     return render_to_response('modificacionProd.html', RequestContext(request, {}))
 
-def bajaProd(request):
-    return render_to_response('bajaProd.html', RequestContext(request, {}))
-
-
-def altaProd(request):
+def altaProducto(request):
     producto = Producto()
     tipoProductos = TipoProducto.objects.all()
     estado = ''
@@ -60,5 +58,15 @@ def altaProd(request):
     #return login_required()
     return render_to_response('altaProd.html',{'estado':estado, 'tipoProductos': tipoProductos}, RequestContext(request, {}))
 
-        
-
+def bajaProducto(request):
+    producto = Producto()
+    estado = ""
+    if request.POST:
+        nombreProducto = request.POST.get('nombre')
+        try:
+            producto = Producto.objects.get(nombre= nombreProducto)
+            producto.delete()
+            estado = "El producto "+nombreProducto+" ha sido dado de baja"
+        except ObjectDoesNotExist:
+            estado = "no existe el producto: "+nombreProducto
+    return render_to_response('bajaProd.html',{'estado':estado}, RequestContext(request, {}))
