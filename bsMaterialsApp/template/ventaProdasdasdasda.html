@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Venta de Productos</title>
+	<link rel="StyleSheet" href="template/static/MenuesCompletos.css" type="text/css">
+</head>
+
+<body> 
+
+<script type="text/javascript">
+  
+function pepe(){
+  celda = document.getElementById("samuel");
+  celda.innerHTML = "idsiahduihdsa";
+}
+
+</script>
+
+<div align="right"> Ud esta logeado como: {{usuario}} 
+
+
+<form action="index.php" method="post" name="login" id="login">	
+
+<input type="submit" name="Submit" class="button" value="Finalizar sesion" />	
+<input type="hidden" name="option" value="com_user" />
+<input type="hidden" name="task" value="logout" />
+<input type="hidden" name="return" value="<?php echo $this->return; ?>" />
+</form>	
+
+</div>
+		
+<table id="tablaGral" height=750 width=100% ALIGN=center>
+
+
+	<tr>
+		<td colspan="2" id="celdaBienvenida" height="100px">
+			
+			<div id="Titulos">Venta de Productos</div>
+			
+		</td>
+
+	</tr>
+
+	<tr>
+	<td id="celdaBienvenida">
+		 <div id="menu">
+			<ul>
+			<li><a id="BotonSeleccionado">Venta de Productos</a>
+			</li>
+			<li><a id="efectoBoton" href="/login/">Menu Principal</a>
+			</li>
+			<li><a id="efectoBoton" href="????">Listar Productos</a>
+			</li>
+			</ul>
+		</div>
+
+		<td id="aplicacion">
+
+
+
+
+<table width="100%" id="Venta">
+<tr>
+	  <td colspan="3" align="left">
+	    <dd> Nota de Venta Nro: {{nroNota}}
+	  </td>
+</tr>
+<tr>
+	  <td align="left">
+	    <br> Apellido: <input type="text" name="apellidoCliente">
+		  Nombre:<input type="text" name="nombreCliente">
+	  </td>
+</tr>
+<tr>
+	  <td align="left">
+	<br>    Producto: <input type="text" name="buscarProducto">
+	  </td>
+</tr>
+
+ 
+<tr height="300"  valign="top">
+<td>
+
+<table height="200" width="100%" border="2">
+
+
+
+<tr height="50">
+
+
+<th>
+    prodcucto
+</th>
+<th>
+    descripcion
+</th>
+<th>
+    cantidad
+</th>
+
+{% for item in productos %}
+      </tr>
+	<td> <a href=# onclick="pepe()"> {{item.nombre}} </a></td>
+	<td>{{item.descripcion}}</td>
+	<td>{{item.stockTotal}}</td>
+      <tr>
+{% endfor %}
+
+
+
+</table>
+
+
+
+
+
+
+
+
+	  </td>
+
+
+	  <td width="10%">
+		<input type="button" value=">>" name"agregar" onclick="pepe()"><br>
+		<input type="button" value="<<" name"quitar">
+
+	  </td>
+
+
+	  <td>
+
+
+<table height="200" width="100%" border="2">
+
+
+
+<tr height="50">
+
+
+	<td>
+    prodcucto
+</td>
+
+
+
+
+	<td>
+    descripcion
+</td>
+
+
+	
+<td>
+    cantidad
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+
+	<tr>
+		
+<td id="samuel" colspan="3" bgcolor= "#C0C0C0">
+
+
+			  instancias de los productos
+ que compro
+		
+</td>
+	
+</tr>
+
+
+
+	
+<tr>
+
+
+		<td colspan="3">
+  instancias de los productos
+ que compro</td>
+
+
+	</tr>
+
+
+
+
+	<tr>
+		
+<td colspan="3" bgcolor= "#C0C0C0">
+
+
+			instancias de los productos
+ que compro
+		
+</td>
+
+
+	</tr>
+
+
+
+	
+<tr>
+		
+<td colspan="3">
+
+
+			instancias de los productos
+ que compro
+
+		</td>
+
+	</tr>
+
+
+
+
+	<tr>
+
+		<td colspan="3" bgcolor= "#C0C0C0">
+
+
+			instancias de los productos
+ que compro
+
+		</td>
+
+	</tr>
+
+
+
+
+
+
+</tr>
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+	  </td>
+
+
+</tr>
+
+<tr>
+	<td colspan="3">
+
+		<input type="button" value="Generar Nota de Venta" name="vender">
+
+	</td>
+
+</tr>
+</table>
+
+
+ 
+</body>
+</html>

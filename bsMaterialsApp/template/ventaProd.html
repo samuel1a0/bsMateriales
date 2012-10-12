@@ -5,8 +5,17 @@
     <title>Venta de Productos</title>
 	<link rel="StyleSheet" href="template/static/MenuesCompletos.css" type="text/css">
 </head>
+
 <body> 
 
+<script type="text/javascript">
+  
+function pepe(nombre){
+  celda = document.getElementById("td1");
+  celda.innerHTML = nombre;
+}
+
+</script>
 
 <div align="right"> Ud esta logeado como: {{usuario}} 
 
@@ -57,15 +66,12 @@
 	    <dd> Nota de Venta Nro: {{nroNota}}
 	  </td>
 </tr>
-
-
 <tr>
 	  <td align="left">
 	    <br> Apellido: <input type="text" name="apellidoCliente">
 		  Nombre:<input type="text" name="nombreCliente">
 	  </td>
 </tr>
-
 <tr>
 	  <td align="left">
 	<br>    Producto: <input type="text" name="buscarProducto">
@@ -74,7 +80,7 @@
 
  
 <tr height="300"  valign="top">
-	  <td>
+<td>
 
 <table height="200" width="100%" border="2">
 
@@ -83,111 +89,30 @@
 <tr height="50">
 
 
-	<td>
+<th>
     prodcucto
-</td>
-
-
-
-
-	<td>
+</th>
+<th>
     descripcion
-</td>
-
-
-	
-<td>
+</th>
+<th>
     cantidad
-</td>
+</th>
 
-
-</tr>
-
-
-
-<tr>
-
-
-
-	<tr>
-		
-<td colspan="3" bgcolor= "#C0C0C0">
-
-
-			  instancias de productos disponibles
-		
-</td>
-	
-</tr>
-
-
-
-	
-<tr>
-
-
-		<td colspan="3">
-
-
-			  instancias de productos disponibles
-
-		</td>
-
-
-	</tr>
-
-
-
-
-	<tr>
-		
-<td colspan="3" bgcolor= "#C0C0C0">
-
-
-			  instancias de productos disponibles
-		
-</td>
-
-
-	</tr>
-
-
-
-	
-<tr>
-		
-<td colspan="3">
-
-
-			  instancias de productos disponibles
-
-		</td>
-
-	</tr>
-
-
-
-
-	<tr>
-
-		<td colspan="3" bgcolor= "#C0C0C0">
-
-
-			  instancias de productos disponibles
-
-		</td>
-
-	</tr>
-
-
-
-
-
-
-</tr>
-
-
-
+{% for item in productos %}
+      </tr>
+    <script type="text/javascript"> 
+                    var clave = {{item.pk}}
+                    var nombreProducto = {{item.nombre}}
+                    var diccionario = {};
+                    diccionario["clave"] = nombreProducto;
+                    
+    </script>
+    <td> <a href=# onclick="pepe('samuel')"> {{item.nombre}} </a></td>
+	<td>{{item.descripcion}}</td>
+	<td>{{item.stockTotal}}</td>
+      <tr>
+{% endfor %}
 
 
 
@@ -204,7 +129,7 @@
 
 
 	  <td width="10%">
-		<input type="button" value=">>" name"agregar"><br>
+		<input type="button" value=">>" name"agregar" onclick="pepe()"><br>
 		<input type="button" value="<<" name"quitar">
 
 	  </td>
@@ -216,127 +141,30 @@
 <table height="200" width="100%" border="2">
 
 
-
 <tr height="50">
 
 
-	<td>
-    prodcucto
-</td>
-
-
-
-
-	<td>
+<th>
+    producto
+</th>
+<th>
     descripcion
-</td>
-
-
-	
-<td>
+</th>
+<th>
     cantidad
-</td>
+</th>
 
-
-</tr>
-
-
-
-<tr>
-
-
-
-	<tr>
-		
-<td colspan="3" bgcolor= "#C0C0C0">
-
-
-			  instancias de los productos
- que compro
-		
-</td>
-	
-</tr>
-
-
-
-	
-<tr>
-
-
-		<td colspan="3">
-  instancias de los productos
- que compro</td>
-
-
-	</tr>
-
-
-
-
-	<tr>
-		
-<td colspan="3" bgcolor= "#C0C0C0">
-
-
-			instancias de los productos
- que compro
-		
-</td>
-
-
-	</tr>
-
-
-
-	
-<tr>
-		
-<td colspan="3">
-
-
-			instancias de los productos
- que compro
-
-		</td>
-
-	</tr>
-
-
-
-
-	<tr>
-
-		<td colspan="3" bgcolor= "#C0C0C0">
-
-
-			instancias de los productos
- que compro
-
-		</td>
-
-	</tr>
-
-
-
-
-
-
-</tr>
-
-
+{% for item in productos %}
+      </tr>
+	<td id="td1" onclick="pepe()"></td>
+	<td></td>
+	<td></td>
+      <tr>
+{% endfor %}
 
 
 
 </table>
-
-
-
-
-
-
-
-
 
 	  </td>
 
