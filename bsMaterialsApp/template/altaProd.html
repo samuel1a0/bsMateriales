@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Alta de Productos</title>
+    <script language="javascript" type="text/javascript" src="template/static/validar.js"></script>
 	<link rel="StyleSheet" href="template/static/MenuesCompletos.css" type="text/css">
 </head>
 <body> 
-
-
 <div align="right"> Ud esta logeado como: {{usuario}} 
 
 
@@ -54,7 +53,7 @@
 
 			<table align="center" id="Formularios">
 				    <tr><td colspan="2" align="center">{{estado}}</td></tr>
-			<form method="POST" action="">
+			<form method="POST" action="" onSubmit="return valida(this)">
 				<tr>
 				    <td id="fuenteCeldaI">Nombre del Producto: </td>
 				    <td id="fuenteCeldaD"><input type="text" name="nombre"></td>
