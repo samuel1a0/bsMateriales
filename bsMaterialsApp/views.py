@@ -7,12 +7,14 @@ from bsMaterialsApp.models import Producto, TipoProducto
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
+from django.http import HttpResponseRedirect
 
-#import ipdb
+import ipdb
 #ipdb.set_trace()
 def login_user(request):
-    state = "Por favor iniciar sesion para poder continuar..."
+    state = ""
     username = password = ''
+    next = request.REQUEST.get("next")
     if request.POST:
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -21,24 +23,26 @@ def login_user(request):
         if user is not None:
             if user.is_active:
                 login(request, user)
-                state = "Exito!"
+                if (next!=None):
+                    return HttpResponseRedirect(next)  
                 return render_to_response('menuGerente.html',{'usuario':username,'contraseña':password}, context_instance=RequestContext(request))
             else:
                 state = "Cuenta Inactiva"
         else:
             state = " nombre de usuario o contraseña incorrecta."
-            
-    return render_to_response('login.html',{'estado':state},context_instance=RequestContext(request))    
+    
+    if (request.REQUEST.get("next")!=None):
+                    state="Por favor iniciar sesion para poder continuar..."
+    
+    return render_to_response('login.html',{'estado':state, 'next': next},context_instance=RequestContext(request))    
 
-#@login_required(redirect_field_name=, login_url)
+
 @login_required(login_url='/')
 def deslogear(request):
     logout(request)
-    return render_to_response('login.html', RequestContext(request, {}))
-    
-def indexLogin(request):
-    return render_to_response('login.html', RequestContext(request, {}))
-
+    #return render_to_response('login.html', RequestContext(request, {}))
+    return HttpResponseRedirect("/")
+       
 @login_required(login_url='/')
 def menuProducto(request):
     return render_to_response('gestionProd.html',{'usuario':request.user.username}, RequestContext(request, {}))
@@ -67,6 +71,8 @@ def altaProducto(request):
             producto.save()
             estado='ALTA PRODUCTO: '+producto.nombre+''
         return render_to_response('altaProd.html',{'estado':estado, 'tipoProductos': tipoProductos, 'usuario': request.user.username}, RequestContext(request, {}))
+
+
 @login_required(login_url='/')
 def bajaProducto(request):
     producto = Producto()
