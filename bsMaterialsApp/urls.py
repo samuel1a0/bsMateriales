@@ -7,6 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', 'bsMaterialsApp.views.indexLogin'),
     url(r'^login/$', 'bsMaterialsApp.views.login_user'),
+    url(r'^deslogear/$', 'bsMaterialsApp.views.deslogear'),
     url(r'^login/menuProd/$', 'bsMaterialsApp.views.menuProducto'),
     url(r'^login/ventaProd$', 'bsMaterialsApp.views.ventaProducto'),
     url(r'^login/menuProd/altaProd$', 'bsMaterialsApp.views.altaProducto'),

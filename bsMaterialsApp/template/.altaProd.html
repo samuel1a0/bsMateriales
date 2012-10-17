@@ -3,21 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>Alta de Productos</title>
+    <script language="javascript" type="text/javascript" src="template/static/validar.js"></script>
 	<link rel="StyleSheet" href="template/static/MenuesCompletos.css" type="text/css">
 </head>
 <body> 
-
-
-<div align="right"> Ud esta logeado como: {{usuario}} 
-
-
-<form action="index.php" method="post" name="login" id="login">	
-
-<input type="submit" name="Submit" class="button" value="Finalizar sesion" />	
-<input type="hidden" name="option" value="com_user" />
-<input type="hidden" name="task" value="logout" />
-<input type="hidden" name="return" value="<?php echo $this->return; ?>" />
-</form>	
+<div align="right"> Ud esta logeado como: {{usuario}} <br> <input type="submit" value="deslogear" href="/login/menuProd/bajaProd"> 
 
 </div>
 		
@@ -41,7 +31,7 @@
 			</li>
 			<li><a id="efectoBoton" href="/login/menuProd/bajaProd">Baja de Productos</a>
 			</li>
-			<li><a id="efectoBoton" href="ModProd.html">Modificacion de Productos</a>
+			<li><a id="efectoBoton" href="/login/menuProd/modificacionProd">Modificacion de Productos</a>
 			</li>
 			<li><a id="efectoBoton" href="Gestion de Productos.html">Volver a Gestion de Productos</a>
 			</li>
@@ -54,7 +44,7 @@
 
 			<table align="center" id="Formularios">
 				    <tr><td colspan="2" align="center">{{estado}}</td></tr>
-			<form method="POST" action="">
+			<form method="POST" action="" onSubmit="return valida(this)">
 				<tr>
 				    <td id="fuenteCeldaI">Nombre del Producto: </td>
 				    <td id="fuenteCeldaD"><input type="text" name="nombre"></td>
