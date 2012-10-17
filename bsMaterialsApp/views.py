@@ -42,7 +42,8 @@ def ventaProducto(request):
     return render_to_response('ventaProd.html',{'productos': productos,}, RequestContext(request, {}))
 
 def modificacionProducto(request):
-    return render_to_response('modificacionProd.html', RequestContext(request, {}))
+    productos = Producto.objects.all()
+    return render_to_response('modificacionProd.html',{'productos':productos}, RequestContext(request, {}))
 
 def altaProducto(request):
     producto = Producto()
