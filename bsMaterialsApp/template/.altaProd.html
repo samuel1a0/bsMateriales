@@ -7,7 +7,7 @@
 	<link rel="StyleSheet" href="template/static/MenuesCompletos.css" type="text/css">
 </head>
 <body> 
-<div align="right"> Ud esta logeado como: {{usuario}} <br> <input type="submit" value="deslogear" href="/login/menuProd/bajaProd"> 
+<div align="right"> Ud esta logeado como: {{usuario}} <br> <button value="deslogear" onClick="window.location = '/deslogear';" >salir</button> 
 
 </div>
 		
@@ -25,15 +25,16 @@
 
 	<tr>
 	<td id="celdaBienvenida">
-		 <div id="menu">
+	
+		 	 <div id="menu">
 			<ul>
-			<li><a id="BotonSeleccionado" href="">Alta de Productos</a>
+			<li><a id="BotonSeleccionado" href="/login/menuProd/altaProd">Alta de Productos</a>
 			</li>
 			<li><a id="efectoBoton" href="/login/menuProd/bajaProd">Baja de Productos</a>
 			</li>
 			<li><a id="efectoBoton" href="/login/menuProd/modificacionProd">Modificacion de Productos</a>
 			</li>
-			<li><a id="efectoBoton" href="Gestion de Productos.html">Volver a Gestion de Productos</a>
+			<li><a id="efectoBoton" href="/login/">Volver a Gestion de Productos</a>
 			</li>
 			<li><a id="efectoBoton" href="????.html">Listar Productos</a>
 			</li>

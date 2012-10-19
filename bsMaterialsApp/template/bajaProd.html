@@ -5,7 +5,57 @@
     <title>Baja de Productos</title>
 	<link rel="StyleSheet" href="template/static/MenuesCompletos.css" type="text/css">
 </head>
+
+
 <body> 
+
+	<script type="text/javascript" >
+
+	function crearPeticion()
+	{
+		var req = false;
+
+		if(window.XMLHttpRequest && !(window.ActiveXObject)) {
+			try {req = new XMLHttpRequest();}
+			catch(e) {req = false;}
+			}
+		else if(window.ActiveXObject) {
+			try {req = new ActiveXObject("Msxml2.XMLHTTP");}
+			catch(e) {
+				try {req = new ActiveXObject("Microsoft.XMLHTTP");}
+        	catch(e) {req = false;}
+			}
+        }
+        
+	return req;
+	}
+	
+	function cargar(nombre, descrip, pk)
+		{
+			var aux;
+			aux = document.getElementById("nombreProducto");
+			aux.value = nombre;
+			aux = document.getElementById("descripcionProducto");
+			aux.innerHTML = descrip;
+			aux = document.getElementById("pkProducto");
+			aux.value = pk;
+
+			
+			
+			
+		}
+		
+		function eliminarElemento(nombre, descrip)
+		{
+			var producto, peticion;
+			producto = document.getElementById("nombreProd");
+			peticion = crearPeticion();
+			
+		}
+		
+
+
+	</script>
 
 
 <div align="right"> Ud esta logeado como: {{usuario}} 
@@ -64,109 +114,70 @@
 
 <table id="Grilla">
 
+<th> Producto </th>
 
+<th> Descripcion </th>
 
-<tr height="50">
+<th> Cantidad </th>
 
+{% for item in productos %}
+  </tr>
+	<td> <a href="javascript:cargar('{{item.nombre}}','{{item.descripcion}}','{{item.pk}}');">{{item.nombre}}</a>
+</td>
+	<td>{{item.descripcion}}</td>
+	<td>{{item.stockTotal}}</td>
+	<td style="display:none">{{item.pk}}</td>
+      <tr>
+{% endfor %}
 
-	<td>
-	  producto
-      </td>
-
-</tr>
-<tr>
-
-
-  <td bgcolor= "#C0C0C0">
-
-      instancias de productos disponibles
-		
-  </td>
-	
-</tr>
-	
-<tr>
-
-    <td>
-      instancias de productos disponibles
-
-    </td>
-
-</tr>
-
-<tr>
-		
-  <td bgcolor= "#C0C0C0">
-
-      instancias de productos disponibles
-
-  </td>
-
-</tr>
-	
-<tr>
-		
-    <td colspan="3">
-
-      instancias de productos disponibles
-
-    </td>
-
-</tr>
 
 <tr>
 
     <td colspan="3">
     </td>
 </tr>
+
 
 
 </table>
+    </td>
+	</tr>
+		<tr>
+
+		    <td colspan="2" align="center">{{estado}}</td>
+
+		</tr>
 
 
 
+<form method="POST" action="">
 
-
-
-			    </td>
-
-			</tr>
-
-			<tr>
-
-			    <td colspan="2" align="center">{{estado}}</td>
-
-			</tr>
-
-
-
-			<form method="POST" action="">
-<tr><td>
-	{{estado}}
-</td></tr>
-
-				<tr>
-				    <td id="fuenteCeldaI">Nombre del Producto: </td>
-				    <td id="fuenteCeldaD"><input type="text" name="nombre" value="{{nombreProducto}}"></td>
-				</tr>
-
-
-				<tr>
-				    <td id="fuenteCeldaI" valign="top">Descripcion </td>
-				    <td id="fuenteCeldaD" colspan="2">
-					<textarea cols="30" rows="5" name="descripcion">
-
-						{{descripcionProducto}}
+	<tr><td>
 	
-					</textarea></td>
-				</tr>
+	</td></tr>
 
-				<tr>
-				    <td align="right"><input type="submit" value="Dar de Baja">			</td>
-				</tr>
-			</form>
+	<tr>
+	    <td id="fuenteCeldaI">Nombre del Producto: </td>
+	    <td id="fuenteCeldaD"><input id="nombreProducto" type="text" name="nombre" value="{{nombreProducto}}"></td>
+	</tr>
 
-			</table>
+
+	<tr>
+	    <td style="display:none"><input id="pkProducto" type="text" name="pkProducto" value="{{pk}}" ></td>
+	    <td id="fuenteCeldaI" valign="top">Descripcion </td>
+	    <td id="fuenteCeldaD" colspan="2">
+			<textarea id="descripcionProducto" cols="30" rows="5" name="descripcion">
+				{{descripcionProducto}}
+
+		</textarea></td>
+	</tr>
+
+	<tr>
+	    <td align="right"><input type="submit" value="Dar de Baja">			</td>
+	</tr>
+</form>
+
+</table>
 
 
 		</td>
@@ -174,11 +185,7 @@
 
 	</tr>
 
-
-
 </table>
 
-
- 
 </body>
 </html>

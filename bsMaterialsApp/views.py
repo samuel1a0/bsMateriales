@@ -76,13 +76,11 @@ def altaProducto(request):
 @login_required(login_url='/')
 def bajaProducto(request):
     producto = Producto()
+    productos = Producto.objects.all()
     estado = ""
     if request.POST:
-        nombreProducto = request.POST.get('nombre')
-        try:
-            producto = Producto.objects.get(nombre= nombreProducto)
-            producto.delete()
-            estado = "El producto "+nombreProducto+" ha sido dado de baja"
-        except ObjectDoesNotExist:
-            estado = "no existe el producto: "+nombreProducto
-    return render_to_response('bajaProd.html',{'estado':estado}, RequestContext(request, {}))
+        pkvalor = request.POST.get('pkProducto')    
+        producto = Producto.objects.get(pk=pkvalor)
+        estado = "El producto "+producto.nombre+" ha sido dado de baja"
+        producto.delete()
+    return render_to_response('bajaProd.html',{'estado':estado,'productos':productos}, RequestContext(request, {}))
